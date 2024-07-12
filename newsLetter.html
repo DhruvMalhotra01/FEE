@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsLetter</title>
+    <style>
+      *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+            font-family: sans-serif
+        }
+        header {
+            background-image: linear-gradient(blue,rgb(72, 179, 228));
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        body{
+          background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1720742400&semt=sph");
+          font-family: Arial, sans-serif;
+          background-attachment: fixed;
+          background-position: center center;
+          background-size: 100% 100vh;
+
+}
+
+nav {
+    background-color: #c28686;
+}
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-bar li {
+    float: left;
+}
+
+.nav-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-bar li a:hover {
+    background-color: #111;
+}
+.box {
+          height: 100px;
+           
+          background-color: #f0f0f0;
+          border-radius: 10px; 
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+          transform: perspective(500px) translateZ(20px);
+          margin: 40px auto; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      
+        .image {
+          max-width: 80%; 
+          max-height: 80%; /
+          border-radius: 10px; 
+          margin: 10px; 
+        }
+        .ccf {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+   .ff {
+      background-color: #f06d6d;
+      padding: 20px;
+      border-radius: 5px;
+    }
+   .contact-details {
+      display: flex;
+      gap: 20px;
+    }
+    .container1 {
+    
+    height: 200px;
+    background-image: linear-gradient(rgb(72, 179, 228),blue);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height=20px;
+    weight=20px;
+  }
+
+  .button:hover {
+    background-color: #3e8e41;
+  }
+        </style>
+
+</head>
+<body>
+  <nav>
+    <ul class="nav-bar">
+        <li><a href="#open">BRIEF</a></li>
+        <li><a href="https://www.google.com/search?q=google&oq=google&gs_lcrp=EgZjaHJvbWUqDQgAEAAYgwEYsQMYgAQyDQgAEAAYgwEYsQMYgAQyDQgBEAAYgwEYsQMYgAQyDQgCEAAYgwEYsQMYgAQyDQgDEAAYgwEYsQMYgAQyDQgEEAAYgwEYsQMYgAQyCggFEAAYsQMYgAQyCggGEAAYsQMYgAQyBggHEAUYQDIGCAgQRRg80gEIMTI0MmowajGoAgCwAgE&sourceid=chrome&ie=UTF-8">BROWSER</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+    </ul>
+</nav>
+
+  <header>
+    <img class="logo" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcDBAUCCAH/xAA+EAABAwMBBQUFBgQFBQAAAAABAAIDBAURBhIhMUFRBxMiYXEUMkKRoRUjUnKBwYKx4fAkM0Ni0RY0ZJKy/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAMCBAEF/8QALREAAwACAQIEAwgDAAAAAAAAAAECAxEhEjEEIkFRE2GRIzKBwdHh8PEzobH/2gAMAwEAAhEDEQA/ALvREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREARFr1NbT026R/i/CN5QGwi5D7w9+6mgJPz+gWN1Zczv7qRvpEUB204LgOuFez3y5v5mL1Hd5mkF7GuHDhhAd1Fz4btTvOJCY/M7x81nrK6loqOWsqp44qaNu0+V7vCB6oHx3NlMqt3dqsBfJNTWO4T29ji32prfDgc+GAphp3Utr1HTd/bKnvCB443DD2eo/dacVPdGFkmuzOwiIsmwiIgCIiAIiIAiIgCIiAIiIAvEsrImF8hw0cSV+yPbG0uccAKu9fa7jszzSUjWT3Pkx3iZTbuLurueOS1MunpGapStskWoNQ0ltp++uNW2hgPug75Jfyt4quLt2nCMubZLYxoBP39adon+EY+pUQoaS86uvbmsM1ZWyb5JZDuYOpPIdPord0r2ZWi0COoubW3Csbv8AvG/dsPk3njqc+WF0OMeL73LOZXkyvy8Ir+kunaDqdv8AgKi4Ohcdz4GtgjaPJwAz+hK7VH2f63qBtVOop6dx/wDPmefoQrhawMADQAByAXpYed+iKLB7srSm0Vreib/h9ZyE9JduX/7JW6yPWVBuuNst93iHGSkf3Mx/Q7j8wp6R1XD1Xqa36ZofaK5xMjv8qnZ78p6BZ66p60a6JnnZyn3C30lqddrmaihpmEtMNSzZkLh8IHxfoog9lx17VxVVwD6KwQuzT0g3GXHxH/n5L3S2y4arr23rVgIgH/a2/wCFjTzI6fU+m5ZLtfqmtrBYdIxieuPhfO33Kcdc8N3Xl5laU6el/Rh02t19Pc3LpqSzabZFRuIbstAbBA3dGPPouK6lornN9u6Kqm0l0g8boGjZ2+oLfP5H6rHU6ffo7VNpfWVbpvb4pI5al/Bkrhjid+MkfNcLT1mqjRS1Nqmkgvlslc2WAnO2B/UHI4FVUJLaZJ229NFwaH1bDqWidHMwQXOm8NTTnkeBIzy/kpSqMFZJWRx6usTPZ7vRO2bhTDd3gG4kjnkfQdQrg07eqa/2enuVGcxyt3t5scOLT5gqGSNeZdjox3vynTREUioREQBERAEREAREQBCixzysgifNK8MjjaXOceAAG8lAQ7tJ1YNO25sdM4G4T5ELT8HV59OXmqWslqr9SXhtJTEyVE7i6SV+/ZHNzv73r91RfZNQ3ypukuWsecRMPwRD3R643nzJVx9k+m/sewNrqiPFdX/eu2hvZH8LflvPmfJdv+HH82cL3mya9ESLS+nKDTdsZR0Me8jMszveldzLj/eF2ERcW23tnaklwgvwncv1QbWuuTbZ/sewRisvMgxstG02D83nzx81qZdPSPKpT3N/WusabTkDYI2e1XObdBSsO8nq7oFD7ZZJ5Kt+otYTCasI2msecR07f5ZHTgPMrzb7bSabhlvepKv2i5yeKSd52tkn4WdT/e4L9tlou3aBUsqbg2S36dYfBDnD6jH7efDp1Vkulcfj+xBtt89/RfqYzVXXXNa+3aeLqa1sOKmvcCNodG/8cTzwNysbTWnbdpuhFJbosc5ZXe/K7qT+3AJU1Nn0nZtuUx0VDTtwGgcfIDiT9VTepu0a6Xa5RS25z6Okp5GyQxZ3vLTnLyOPpw9V5MvJxPYVSx81yy2Nd6aZqawS0bS1tSw95TvPJ45Z5A8FUVPcK2CsN7gjc25Un3N1pHDBkA3beOvDPHeMq6tL32n1FZqevp8AvGJIx/pv5gqN680hUVVQ2/6dLYrtCPHHjdUN5g9T68eCY66X00e5J2uqSFS1tHRagor9antfb7oRBVxY9156jz4/oTzXd0fOdK64nshdi3XQd7TZ+GTfu+hH6NXAsVosF+rWygT2+thkD57aHYYXN5tBGcZ5Dguv2hs9npbZdIiWz0NYwgjjsniPmAt0030mJT11FuIvEMnexRvxjbYHY/T+q9rlOsIiIAiIgCIiAIiIAob2s3M27R1SyMkSVbhAMHfg+99B9VMlVXbrUEQWimBO+R7z8sKmJbtInleobK40rbftjUduoHNyyacGTdu2RvcD8sL6aa1rWgNGABgDoqJ7GoO81j3h4RUzyPUkK+Aq+Ke70R8KvJsL8JwDvG7ryXmWRkMT5ZXhjGAlznHAA6qrtQanr9X1ktm0u90VuYcVVw3ja8mnz5cz5BQmeo6KvpXzN3VetquurH6f0eO+rCdiesA8EPXB8uvyyVx2/ZOhaDbkeau5VG/rJK48T5Nzz5+ZWKato9MxNsGmKX2y7ykN2Gt2jt9Xf8bgBxwpZo/Q4t1V9r36QV15k8Re7e2L8vn5/JW8sr+ckFun35/4crTejq6/VTL3rNpaM7VLbuAjHLaH7cevRWNKDFA8UzGucxn3cfAbhuHkFzKjU1rpr9DY5qjFfM3aYzG7fwBPInBVdTXq46J7Rqn7YqZZbbcDt7T3EtDCdzmjgC07iBy9Qsad/kb2sf5sg+rL5db3dZH3gujkheWNpuDYcHGAP3XEVsdrGkvaW/8AUlpZ3oLQatkYzlvKQdd3H58lU67sVTU8HBmmprkkuh9Wz6VuPekOloZiBUQt4/mGd2R9V9BW6vpLnQxVlBM2anlblr28x5g8D5HevlhSvQNXqkVM9FpbaIlb96XtzFCfx54A/U9CpZ8KpdS4K4Mzny62T/tQotLQNFdXzvpLsRmJ1GR30mOZHTzOFwtMaW1Jqf2SbUVTLDaYHiRkczQJZ8bxuHAeZ+R4qRWPSlBZ6o3C5TG73l7gX1E3iaw/7cqwhvaM81z/ABOlak6Vj6nt8fINAa0BowAMBfqIolwiIgCIiAIiIAiIgCqPt2jxLaJT7oEjf13FW4q67baLv9OU1WBn2apGfRwwVXC9WiWZbhkS7FZGt1XOw8X0rsfoQror62mt1JJVVszIaeMbT3vOAF889n1yFq1fbqh79lkj+5kPk7cPrhTnVVDcr1fayXVFQ2lsFBJiGBj8NlHEOPMkj5cBjeTbNj3kIYMmsZhulzuPaHVPhp3SUWm4HeN53OqSOvUDpwHPJxjXbWzV0zdNaEgayNm6esA8EQ5na6nrxK9UVPcNcP8AYLOw2zTkB2XStbgzAcm/Lhw69FZlptVs01a+4oYWwU0TS+Q8XOwN7ieZWHSnj/RtS6/U0NI6Rt2laRzo/vat4zPVye87md/ILR7R9TXLTdBRVdrgilifKBM+QEtDeQGOGeqwz3Kj7RtJXOks08sM43BknhJIOW5wfddj+8KPdn14hulvqNFaoYdtoMUTZdxwPgz+JvELKl/efp6GnS0pn19TPrm0xarsdJqzT2faoWAvaz38NOf/AHacrNa6uh7TtL/Z1e5sV4pN4fzyN223/aeY/ouHbqu49mOoX0VeHz2apdlrw3cR+MdHDm1bOr9PRUWxrTRleyGHPevYx4DQTxLM7t/Nv9iuuNfRkt92/wAUNHaorNH3B+mdVtcymYfuZnbxECd3qw8unpw5PafYbJba6Kqs1XEZKpwzQx+LBPxNxwB6fJb1VXXXtOpaOkp7LBG+nP39yfnEZ5hh6HAyN/8AIqd6R0FatObNR3ftVwA31MoBLfyD4f5o7UPq9QpeRdKXBAtIdl1XcNirv+1S053inbukePP8P81blFbqK0200lvp2U9PG04YweXHzK3wMLWuD9iilI44wue8lW+Tox4phcEbYNohvUhSxvuj0UZoWd7VRM5bSk6wUCIiAIiIAiIgCIiAIiIAubqS1tvNjrbc/d38Ra134Xcj88LpIeCJ65PGtrR8oTxS08r4JmuimieWObza5px9CFcFooKXtJttrrrjWzMfQAxV9JGcCZwxsu8sjfkdcclye2HSr6atN/omZhnw2qDfgfwD/wBRuPoOqh+jtS1Gl7uKyId5A/wVEQ+Nvl5jkvoV9rHUu6Pnz9lfS+zPoiF1BbzT26F0EGWYhgaQ3wjoFX//AFpcrTr6otepQxltqDsweAYiB912eJB3g54ZB3YK0e0GjddG0OudMVRmEDGiTYOSwNOQ7HLGSHD9eq3JG27tU00HROjpr5Rjg74D0PVjt+/l+mFzTKXLOmr3xJxtR2yu7OtSNv1kaH2qd3ji+EZOTGccB+E8voetqXT9Drigj1HpaUMuLANtgOy5xHI/heOR5/Jc7T+rHWeObS+vqR/szWlgkkYX4b0cB7zejhlcnTNgu90utYdHS1tts0xLTU1TseH0HvHp5cSq642/r7kt86X09jeGuBdrBPYdSWWW4XRp7qIReEveN2SeLXA8xx8lv6Q7MamaGKbU00jKYP7xluZIcE9XkcPQb/NTrS+j7ZpuMmmYZqp/+ZVTb5Hnn6DyCkOACo1lXaCs4W+b5MNJSU9FTtgpYWQwxjDGMGA0eixXO50dpo3VdwnbDC0gZPMngAOZPQLxe7jHarXUVsoLhG3LWDi93ANHmTgKmbpJXybdZdJqhrWPfM6UglsLjuLmg8Xf6cY3c3Hqsxj62bu1C4LXptV2mquLqOKY7iGd68bLHPPwAni7yWe9z+GOBp3nxOVLaPt0+p9SU9TKwwWy2vZKWh2QwNdtNYDje4kbzz3+StiR0lZVZA8bzuXuWFD0hit2tm9YoMufMRuAwP1XaWGlgbT07Ym8hvPVZlIqEREAREQBERAEREAREQBERAYaulhrKeSnqY2yQytLXscNzgVQWvdEVOmKt09Ox81qkd93MBnus8GP6eR/dfQaxzwRVET4p42yRvGy5jhkEKmPI8bJZcStHzZpjU9fpupfJSObJTybpqaQ5ZIP2PmpVb4bNdbjHctHXVtjvQ3+w1ZxG8ni0OG7B6b/AEXU1b2Uh0jqrTcjWE5zSSnw/wALuXodyrC6W2stU/s10pJqWU7gyduNr8p4OHouxOMnKejiavHw0XJatBVV0rxdtb1Ta6p+CmjP3LB0PDI8uCn8MUcEbY4WNZGwYa1owAF8y0Gor1bgG0F2q4WAYDO9Lmj0ByB8luTa11PNGWSXuqxjG7Zb9QApV4e69Ss+IiV2Lv1drK2aYia2rc6aqkGY6aL33Dqeg8yq7qu2G6Pkd7LbaWOPltvcT81XM00s8pmqJZJpDxkkcXOP6leqJk09XFFSQuqJicthYwvLv4QqT4eJXmJ14i6epJTeNWamvUTfbbhHQ0zhtNDXd1tDqAMvd6gLFp2z1l7rHwUlXUVb3RuZPPJtingY5pBc5z97iAchuBvxyBK7Fk7PK+tn9t1RO6kY47RgDtqZ48+TR9fRWDQUUMFMygtVIIaZp3Rx8/Nx5lYvLMLUFMeK7e6MNst9LabdFbbaw9xGcucfelfzcVJbXQ+zN7yUfeOHD8IX7QW5tPiSQh8nLoFvhcj5e2diSS0giIvD0IiIAiIgCIiAIiIAiIgCIiAIiIARkYPBalVQw1ULoZWtfE73o5GB7D6tO5baJ2BDK/s+sFS4vNngDj8VO90X04LlP7MbCHZNHc/4akYH0VkIt/Ev3MfDh+hX1NoCwU5BbY5Z3DgaiZzv5YUgorXNSx9zQUdNQRni2FjWZ9cbypCi8dU+7PVErsjlQ2dpdtTSlx5gLpRRMibsxsDQOi9osmgiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgP//Z" alt="Newsletter Logo">
+    <h1>The News Of India</h1>
+</header>
+<div class="container1">
+    
+    <br>
+    <button class="button">GALLERY</button>
+    <br>
+    <p>
+    <marquee>"Click on the gallery button to explore more exciting news, updates, and stories that will keep you informed and entertained."</marquee>
+</p>  
+</div>
+<div class="box">
+    <img src="https://images.hindustantimes.com/img/2024/07/12/550x309/Delhi_CM_Arvind_Kejriwal_1720773815213_1720773815885.jpg" alt="Image" class="image">
+    <p><b>The court order comes hours after the Supreme Court granted Aam Aadmi Party (AAP) convenor Arvind
+        Kejriwal
+        interim bail.</b><br>Delhi's Rouse Avenue court extended the judicial custody of chief minister Arvind
+    Kejriwal
+    until July 25 in a case registered by the Central Bureau of Investigation (CBI) against him in the excise
+    policy case.
+
+    The court order comes hours after the Supreme Court granted the Aam Aadmi Party (AAP) convenor an interim
+    bail. Kejriwal, 55, was arrested by the CBI on June 26 while remaining in judicial custody in the ED case
+    against him.
+
+    The CBI has accused Kejriwal of being 'one of the main conspirators' in the irregularities linked to the
+    now-scrapped Delhi excise policy. In the Delhi court, the agency had alleged that former media in-charge of
+    AAP Vijay Nair, a close associate of Kejriwal, was in touch with various liquor manufacturers and trades and
+    demanded undue gratification since March 2021, for incorporation of provisions favourable to them in the
+    excise policy.
+
+    In its previous chargesheet, the CBI had claimed that out of ₹100 crore kickbacks received by AAP, an amount
+    of ₹44.45 crore was transferred to Goa during June 2021 to January 2022 via 'hawala channels', and was used
+    for AAP's assembly poll campaign in the coastal state.</p>
+  </div>
+  <br>
+  <div class="box">
+    <img src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2160794637.jpg?c=16x9&q=h_833,w_1480,c_fill" alt="Image" class="image">
+    Biden's twin gaffes at Nato event, Zelenskyy is 'Putin', Kamala Harris is 'Trump'</b>US President Joe
+            Biden's saga of verbal slips continued as the 81-year-old first introduced Ukraine's Volodymyr Zelenskyy as
+            his arch-enemy "Putin", before going on to mix up the names of his Vice President Kamala Harris and rival
+            Donald TrumpThe 81-year-old Democrat initially began to walk offstage before realising his error and
+            returning to correct himself. "Zelenskyy is gonna beat President Putin," he added.
+
+            Zelenskyy appeared to take the misstep in stride, responding with a lighthearted comment. "I'm better," he
+            said.
+
+            Biden replied, "You're a hell of a lot better."
+
+            At a so-called "big boy" solo press conference shortly afterwards, the US President fumbled his
+            second-in-command Kamala Harris's name, referring to her as "Vice President Trump" while answering the first
+            question fielded to him.
+
+            "Look, I wouldn't have picked Vice President Trump to be vice president [if] I think she's not qualified to
+            be president," Biden said, as top Democrats, including Secretary of State Antony Blinken and Defense
+            Secretary Lloyd Austin looked on stony-faced.
+  </div>
+  <br>
+  <div class="box">
+    <img src="https://www.livemint.com/lm-img/img/2024/07/12/600x338/PTI06-10-2023-000237A-0_1686474276187_1720764986027.jpg" alt="Image" class="image">
+    <p><b>How Can State Block...": Supreme Court To Haryana On Shambhu Border Crossing</b>The Supreme Court has
+        asked tough questions of the Haryana government after a High Court order this week directing the re-opening
+        of the Shambhu border crossing, which has been locked down since February to block farmers protesting the
+        centre's agricultural policies from marching on Delhi.
+        "How can the state block a highway? It has a duty to regulate traffic... we are saying 'keep the border
+        open, but also control it," the top court said Friday afternoon in oral observations on the matter.
+
+        In a humorous but telling moment, the two-judge bench of Justice Surya Kant and Justice Ujjal Bhuyan asked
+        the state's lawyer if he travelled by road, and specifically the highway."I think you travel by road..."
+        Justice Kant asked, to which the lawyer replied, "Yes."
+
+        "So you (too) must be facing trouble..." the judge shot back.
+
+        The state had appealed a section of the Punjab and Haryana High Court's order, which directed a judicial
+        inquiry into the death of farmer Shubhkaran Singh, 22. Mr Singh - one of thousands who had marched to
+        Shambhu (on the Punjab-Haryana border) after talks broke down, and were met with fortifications of barbed
+        wire, shipping containers, and cement barricades - was allegedly shot dead.</p>
+  </div>
+  <br>
+  <div class="box">
+    <img src="https://c.ndtvimg.com/2024-07/49rgga4o_shambhu-border-ani_625x300_10_July_24.jpeg?im=FaceCrop,algorithm=dnn,width=650,height=400" alt="Image" class="image">
+    <p><b>Tata Consultancy Services, Wipro, Maruti Suzuki India, Divis Laboratories among most active stocks</b>Top
+        Gainers and Losers Today : The Nifty closed at 24315.95, up by 0.77% for the day. The Nifty reached a day
+        high of 24592.2 and a low of 24331.15. The Sensex traded between 80893.51 and 79843.39, closing 0.78% higher
+        at 79897.34, which was 622.0 points above the opening price.
+  </div>
+  <br>
+  <div class="box">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ8l1swG04ghQnVeILcyHWzoIagKo76pxsFg&s" alt="Image" class="image">
+    <p><b>Delhi BJP protests against ‘electricity price hike’, targets AAP government</b><br>Led by Delhi BJP state
+        chief Virendra Sachdeva, the party held a massive protest against the electricity price hike at Shahidi Park
+        in ITO.The Delhi BJP protested at the Secretariat on Friday against the Aam Aadmi Party (AAP) government’s
+        “price hike” of electricity bills, alleging that AAP-supported discoms were charging consumers hefty amounts
+        under the guise of power purchase adjustment charge (PPAC).Led by state BJP chief Virendra Sachdeva, the
+        party's Delhi unit held a protest at Shahidi Park in ITO. In a post on X, the Delhi BJP said, “Foot march
+        under the leadership of State President Mr Virendra Sachdeva to the Delhi Secretariat in protest against the
+        increase in electricity prices by the Kejriwal government.”</p>
+  </div> 
+  <br>
+  <div class="box">
+    <img src="https://images.hindustantimes.com/img/2024/07/12/550x309/Screenshot_2024-07-12_133045_1720771245827_1720771254006.png" alt="Image" class="image">
+    <p><b>India vs Zimbabwe, 4th T20I: Fantasy 11 Prediction, teams, captain, vice-captain, toss and venue analysis</b><br>Abhishek Sharma, Ravi Bishnoi, Ruturaj Gaikwad and Washington Sundar have been the stars for India.India will clash with Zimbabwe in the fourth T20I of the five-match series on the 13 of July, Saturday in Harare. India took a 2-1 lead in the series when they beat Zimbabwe by 23 runs in the third match on Wednesday. Abhishek Sharma, Ravi Bishnoi, Ruturaj Gaikwad and Washington Sundar have been the stars for India in the series thus far. India would look to seal the series on Saturday.</p>
+        
+        <p><b>Latest Flashpoint In Trinamool vs Bengal Governor: Rejected Bills</b><br> The West Bengal government has filed a petition in the Supreme Court challenging Governor CV Ananda Bose's refusal to give assent to eight bills. The state's counsel, Astha Sharma, urged the court to list the petition for immediate consideration.
+            The controversy arose after Governor's rejection of these bills without citing any reasons, prompting the Trinamool Congress-led government to argue that this action violates Article 200 of the Constitution. According to the state's submission, denying approval to bills without providing grounds undermines democratic governance.
+            
+            "The Governor's oversight poses a threat to democratic governance and infringes upon the rights of the state," argued the state's lawyer.</p>
+  </div>
+  <br>
+  <hr>
+  <hr>
+
+  <div class="ccf">
+    <div class="ff">
+      
+      <div class="contact-details">
+        <span>Contact us: <a href="dhruv1732.be23@chitara.edu.in">dhruv1732.be23@chitara.edu.in</a></span>
+        <span>Phone: 9996633907</span>
+      </div>
+      
+    </div>
+
+  </div>
+  <hr>
+</body>
+</html>
