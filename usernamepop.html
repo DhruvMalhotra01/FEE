@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Access</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="askLocation()">location</button>
+
+    <script>
+        function askLocation() {
+            const location = prompt("Please enter your location");
+
+            if (location && (location.toLowerCase() === 'punjab' || location.toLowerCase() === 'haryana' || location.toLowerCase() === 'chandigarh')) {
+                askCredentials(location); 
+            } else {
+                alert("Access Denied.");
+            }
+        }
+
+        function askCredentials(location) {
+            const username = prompt("Please enter your username:");
+            const password = prompt("Please enter your password:");
+
+            const correctUsername = "DHRUVMALHOTRA"; 
+            const correctPassword = "VALIDINFO"; 
+
+            if (username === correctUsername && password === correctPassword) {
+                
+                if (location.toLowerCase() === 'haryana') {
+                    window.location.href = "https://www.google.com/maps/place/Haryana,+Sonipat,+Haryana+131001/@28.8760149,76.6945209,8.68z/data=!4m6!3m5!1s0x390db06d3f1ae257:0x43a8a1d79548564d!8m2!3d28.995298!4d77.0235214!16s%2Fg%2F11g1pn35wt?entry=ttu"; // Link to Haryana map
+                } else if (location.toLowerCase() === 'punjab') {
+                    window.location.href = "https://www.google.com/maps/place/Punjab/@30.9999317,72.7697893,7z/data=!3m1!4b1!4m6!3m5!1s0x391964aa569e7355:0x8fbd263103a38861!8m2!3d31.1471305!4d75.3412179!16zL20vMDc1X3Qy?entry=ttu"; // Link to Punjab map
+                } else if (location.toLowerCase() === 'chandigarh') {
+                    window.location.href = "https://www.google.com/maps/place/Chandigarh/@30.7322544,76.6883123,12z/data=!3m1!4b1!4m6!3m5!1s0x390fed0be66ec96b:0xa5ff67f9527319fe!8m2!3d30.7333148!4d76.7794179!16zL20vMDFmMXE4?entry=ttu"; // Link to Chandigarh map
+                }
+            } else {
+                alert("Wrong credentials. Please try again.");
+            }
+        }
+    </script>
+
+</body>
+</html>
